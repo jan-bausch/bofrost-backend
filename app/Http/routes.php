@@ -34,7 +34,7 @@ $app->get('product/{id}', function ($id) {
    
    foreach ($productXml->product as $product) {      
       if ($product->ArtNumber == $id) {
-         $response = ["name" => (string) $product->Title, "description" => (string) $product->Description, "image" => app("url")->to("product/$id/photo")];
+         $response = ["id" => (string) $id, "name" => (string) $product->Title, "description" => (string) $product->Description, "image" => app("url")->to("product/$id/photo")];
          return response()->json($response);
       }
    }

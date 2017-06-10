@@ -1,1 +1,2 @@
-#bofrost* Hackathon Backend Server
+## bofrost+friends Backend Server
+REST-Api for bofrost*friends app

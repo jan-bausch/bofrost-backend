@@ -34,4 +34,6 @@ $app->get('product/{id}', function ($id) {
 });
 
 $app->get('product/{id}/completedChallenges', function ($id) {
+   $results = app("db")->select("SELECT * FROM challenges");
+   return var_dump($results);
 });
